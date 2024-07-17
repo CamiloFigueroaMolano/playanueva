@@ -1,0 +1,37 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item img {
+    width: 20%; /* Ajusta el ancho al 75% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    object-fit: contain; /* Ajusta la imagen para caber dentro del contenedor sin distorsionarla */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del ícono de control */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: auto; /* Ancho automático */
+    background: none; /* Fondo transparente */
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo al pasar el mouse */
+}
+
+.carousel-indicators {
+    bottom: 10px; /* Posición de los indicadores */
+}
+
+.carousel-indicators button {
+    background-color: #fff; /* Color de fondo de los indicadores */
+    border: none; /* Sin borde */
+}
+
+.carousel-indicators button.active {
+    background-color: #1ECBC2; /* Color de fondo del indicador activo */
+}

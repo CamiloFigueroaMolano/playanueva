@@ -1,0 +1,165 @@
+/* Estilos para el navbar top */
+.navbarTop {
+    background-color: #F1F0EB;
+    margin-top: -2.8px;
+    padding: 5px;
+    position: fixed; /* Hacer que la barra de navegación sea fija */
+    top: 0; /* Posicionar la barra de navegación en la parte superior */
+    width: 100%; /* Asegurar que la barra de navegación ocupe el ancho completo */
+    z-index: 1000; /* Asegurar que la barra de navegación esté por encima de otros elementos */
+}
+
+
+#navbarMain {
+    background-color: white;
+}
+
+#navbarMain a {
+    color: black;
+    font-size: 25px;
+    margin-top: 10px;
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+#navbarMain a:hover {
+    color: #B59D55; /* Cambia el color al pasar el mouse sobre el enlace */
+    text-decoration: underline;
+}
+
+.nav-itemt {
+    margin-top: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.nav-container {
+    color: #293A6B;
+    font-size: 25px;
+    margin-top: 10px;
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.nav-container:hover {
+    color: #1ECBC2; /* Cambia el color al pasar el mouse sobre el enlace */
+}
+
+.nav-container .fas {
+    color: #DCB76C;
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.nav-container:hover .fas {
+    color: #B59D55;
+}
+
+#navbarContact {
+    background-color: #F4F7FA;
+    padding: 10px;
+}
+
+.fab {
+    color: #1ECBC2;
+    transition: transform 0.3s ease; /* Agregamos una transición suave para el cambio de tamaño */
+}
+
+.fab:hover {
+    transform: scale(1.8); /* Aumentamos el tamaño del icono al 120% cuando se pasa el cursor sobre él */
+    color: #E53B97;
+}
+
+/* Estilos para el texto con clase .text-light */
+.text-light {
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+/* Estilos para el enlace del navbar */
+#navbarTop h5 {
+    color: #410A4F;
+    text-decoration: none;
+}
+
+/* Estilos para el botón del navbar */
+#clickHere {
+    background-color: #DCB76C; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    font-size: 25px;
+    margin-left: 2em; /* Espaciado a la izquierda del texto */
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    border: none; /* Quitar borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para cambios */
+}
+
+#clickHere:hover {
+    background-color: #B59D55; /* Cambiar color de fondo al pasar el mouse */
+    transform: scale(1.1); /* Aumentar tamaño al pasar el mouse */
+}
+
+/* Estilos al pasar el mouse sobre el enlace del navbar */
+#navbarTop h5 a:hover {
+    color: #E53B97;
+    text-decoration: underline;
+}
+
+/* Estilos para el navbar principal */
+.navbar {
+    padding: 10px; /* Ajusta el espaciado según tus preferencias */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido del navbar */
+}
+
+/* Estilos para el logo */
+.logo {
+    max-width: 78%; /* La imagen ocupará el ancho máximo del navbar */
+    display: block; /* Hacer que el logo ocupe todo el ancho disponible */
+    transition: transform 0.3s ease; /* Agregar transición suave al cambio de tamaño */
+    margin-bottom: 5px; /* Ajusta el margen inferior del logo */
+    margin-left: 12%;
+}
+
+/* Estilos para los íconos de Font Awesome */
+.fa {
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Estilos para los iconos específicos */
+.icon-envelope {
+    color: #1ECBC2; /* Color del ícono de correo */
+}
+.icon-phone {
+    color: #1ECBC2; /* Color del ícono de teléfono */
+}
+.icon-map-marker {
+    color: #1ECBC2; /* Color del ícono de dirección */
+}
+
+/* Cambiar color al pasar el cursor sobre los íconos */
+.contact-info:hover .fa {
+    color: #A02AA2; /* Color rosado al pasar el cursor sobre los íconos */
+}
+
+/* Estilos para los textos */
+.text-light0 {
+    color: #405da0; /* Color por defecto */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Cambiar color al pasar el cursor sobre los textos */
+.contact-info:hover .text-light0 {
+    color: #410A4F; /* Cambiar a tu color deseado */
+}
+
+/* Estilos generales para la navbar */
+.navbar {
+    background-color: white; /* Cambia el color de fondo según tus preferencias */
+    padding: 10px; /* Ajusta el espaciado según tus preferencias */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido del navbar */
+}
+
+/* Estilos para aumentar el tamaño del logo al pasar el cursor por encima */
+.logo:hover {
+    transform: scale(1.1); /* Aumentar el tamaño del logo al 110% */
+}

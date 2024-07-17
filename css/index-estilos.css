@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Caveat-Bold";
+    src: url(../assets/fonts/Caveat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Medium";
+    src: url(../assets/fonts/Caveat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Regular";
+    src: url(../assets/fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-SemiBold";
+    src: url(../assets/fonts/Caveat-SemiBold.ttf);
+}
+
+body {
+      
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.custom-navbar {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo translúcido */
+    transition: background-color 0.3s ease; /* Añades la transición al navbar personalizado */
+}
+
+
+.custom-navbar.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5); /* Color translúcido de los enlaces */
+}
+
+  
+  /* Add this to your stylesheet */
+  body.scrolled .navbar.bg-faded {
+    background-color: rgba(250, 250, 250, 0); /* Transparent background on scroll */
+  }
+
+
+.col-md-3{
+    position: relative;
+    margin-top: 2.7vw;
+    margin-bottom: 15vw;
+}
+
+.listaMain {
+    list-style: none;
+    font-family: Caveat-Semibold;
+    font-size: 27px;
+    background-color: rgba(167, 83, 0, 0.5);
+    border-radius: 7px;
+    color: black;
+    padding: 9px;
+    transition: background-color 0.3s; /* Agregamos una transición suave para el fondo */
+}
+
+.listaMain:hover {
+    background-color: rgba(167, 83, 0, 0.7); /* Cambiamos el fondo al hacer hover para que se oscurezca */
+}
+
+.listaMain a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.listaMain img{
+    width: 70px;
+    margin-right: 10px;
+}
+
+#whatsapp-button {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    z-index: 1000;
+    transition: right 0.5s ease-in-out;
+    font-size: 50px;
+    color: #25D366;
+}
+
+#whatsapp-button i {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilo para el botón del formulario */
+.btn-primary {
+    background-color: #DCB76C;
+    border-color: #DCB76C; /* Puedes ajustar el borde si lo necesitas */
+}
+
+/* Cambio de color al hacer hover */
+.btn-primary:hover {
+    background-color: #C8A65F; /* Puedes ajustar el color al hacer hover */
+    border-color: #C8A65F;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(5px, 0); }
+    50% { transform: translate(0, 0); }
+    75% { transform: translate(-5px, 0); }
+    100% { transform: translate(0, 0); }
+}
+

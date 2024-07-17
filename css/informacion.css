@@ -1,0 +1,62 @@
+/* Estilos CSS personalizados */
+
+.informacion-section{
+    margin-bottom: -4em;
+}
+
+.section-full-width {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section-full-width h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-full-width h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 5px;
+    background-color: #DCB76C;
+}
+
+.section-full-width p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.section-full-width .btn {
+    background-color: #DCB76C;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.section-full-width .btn:hover {
+    background-color: #B59D55;
+    color: #fff;
+    text-decoration: none;
+}
+
+.section-full-width .imagen {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.section-full-width .imagen:hover {
+    transform: scale(1.05);
+}

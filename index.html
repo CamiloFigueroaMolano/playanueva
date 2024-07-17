@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.0-alpha2-dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/index-estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <title>Playa Nueva</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+    <!-- MainImage -->
+    <div id="mainImage-placeholder"></div>
+    <!-- infoferia -->
+    <div id="infoferia-placeholder"></div>
+    <!-- servicios -->
+    <div id="servicios-placeholder"></div>
+    <!-- testimonios -->
+    <div id="testimonios-placeholder"></div>
+    <!-- informacion -->
+    <div id="informacion-placeholder"></div>
+    <!-- ubicacion -->
+    <div id="ubicacion-placeholder"></div>
+
+    <!-- WhatsApp Button -->
+    <div id="whatsapp-button">
+      <a href="https://wa.me/1234567890" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <!-- footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">
+              Feria Nacional Inmobiliaria
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                class="logo"
+                src="./assets/fotos/logos/logo1.png"
+                alt="Logo de tu empresa"
+              />
+            </div>
+            <form
+              class="datos"
+              id="contact-form"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSfw0CO5mm_P6F5lOEhDa-KaMh7Lm61eF1B9cK4sTTU80eblqw/formResponse"
+              method="post"
+              target="confirm"
+              onsubmit="handleSubmit(event)"
+            >
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="entry.680907130"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="entry.341848414"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Teléfono</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="entry.953771355"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="entry.1135188271"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" id="submit-btn" style="background-color: #DCB76C; border-color: #DCB76C;">
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div
+      class="modal fade"
+      id="successModal"
+      tabindex="-1"
+      aria-labelledby="successModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="successModalLabel">¡Gracias!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Su respuesta fue almacenada correctamente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        // Cargar navbar y otras secciones
+        $("#navbar-placeholder").load("./html/navbar.html");
+        $("#mainImage-placeholder").load("./html/mainImage.html");
+        $("#informacion-placeholder").load("./html/informacion.html");
+        $("#servicios-placeholder").load("./html/servicios.html");
+        $("#testimonios-placeholder").load("./html/testimonio.html");
+        $("#horarios-placeholder").load("./html/horarios.html");
+        $("#ubicacion-placeholder").load("./html/ubicacion.html");
+        $("#contactanos-placeholder").load("./html/contactanos.html");
+        $("#acreditacion-placeholder").load("./html/acreditacion.html");
+        $("#footer-placeholder").load("./html/footer.html");
+
+        // Función para animar el botón de WhatsApp
+        function animateButton() {
+          $("#whatsapp-button").animate({ right: "30px" }, 500, function () {
+            $("#whatsapp-button").animate({ right: "20px" }, 500);
+          });
+        }
+
+        // Animar el botón de WhatsApp cada 5 segundos
+        setInterval(animateButton, 5000);
+
+        // Mostrar el modal después de 45 segundos
+        setTimeout(function () {
+          $("#contactModal").modal("show");
+        }, 45000); // 45000 ms = 45 segundos
+
+        // Añadir evento de clic al botón en la navbar
+        $("#navbar-placeholder").on("click", "#clickHere", function () {
+          $("#contactModal").modal("show");
+        });
+
+        // Desplazamiento suave al hacer clic en un enlace del navbar
+        $("#navbar-placeholder").on("click", "a.nav-link", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            const hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+
+        // Detectar clic en el botón externo y abrir el modal
+        $(document).on("click", "#agendaCitaBtn", function (event) {
+          event.preventDefault();
+          $("#contactModal").modal("show");
+        });
+      });
+
+      // Manejar el envío del formulario
+      function handleSubmit(event) {
+        event.preventDefault();
+        const form = document.getElementById("contact-form");
+        const data = new FormData(form);
+
+        fetch(form.action, {
+          method: "POST",
+          body: data,
+          mode: "no-cors",
+        })
+          .then(() => {
+            $("#contactModal").modal("hide");
+            $("#successModal").modal("show");
+            setTimeout(() => {
+              $("#successModal").modal("hide");
+              window.location.href = "/";
+            }, 5000); // 5000 ms = 5 segundos
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
+    </script>
+
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+/* Estilo para los enlaces en el footer */
+#tempaltemo_footer a {
+    color: #410B4F;
+    font-size: 0.9em!important;
+}
+#tempaltemo_footer a:hover {
+    color: #B59D54;
+}
+
+#tempaltemo_footer h2{
+    color: #DCB86C !important;
+}
+
+/* Espaciado para los elementos de lista en el footer */
+#tempaltemo_footer ul.footer-link-list li {
+    padding-top: 10px;
+}
+
+/* Estilo para los íconos de redes sociales en el footer */
+#tempaltemo_footer ul.footer-icons li {
+    width: 2.6em;
+    height: 2.6em;
+    line-height: 2.6em;
+}
+#tempaltemo_footer ul.footer-icons li:hover {
+    background-color: #cfd6e1;
+    transition: .5s;
+}
+#tempaltemo_footer ul.footer-icons li:hover i {
+    color: #212934;
+    transition: .5s;
+}
+
+/* Estilo para los elementos con clase .border-light */
+#tempaltemo_footer .border-light {
+    border-color: #B59D54 !important;
+}
+
+/* Estilo para los elementos dentro de un contenedor con clase .product-wap */
+.product-wap .h3, 
+.product-wap li, 
+.product-wap i, 
+.product-wap p {
+    font-size: 12px !important;
+}
+.product-wap .product-color-dot {
+    width: 6px;
+    height: 6px;
+}
+
+.bg-dark { background-color: #F1F0EA !important;}
+
+.logo2 {
+   
+    max-width: 40%; /* La imagen ocupará el ancho máximo del navbar */
+}
