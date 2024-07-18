@@ -12,6 +12,7 @@ body {
     overflow: hidden; /* Para ocultar los rectángulos que se salen del contenedor */
     text-align: center; /* Centrar el contenido */
     margin-top: 10%;
+    
 }
 
 .testimonios-container h2 {
@@ -94,7 +95,7 @@ body {
 
 /* Añadir margen derecho a todos los elementos excepto los de la última columna */
 .video:not(:nth-child(3n)) {
-    margin-right: 7%; /* Ajustamos el margen derecho */
+    margin-right: 1%; /* Ajustamos el margen derecho */
 }
 
 .video:hover {

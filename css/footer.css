@@ -54,3 +54,9 @@
    
     max-width: 40%; /* La imagen ocupará el ancho máximo del navbar */
 }
+
+.btn:hover {
+    background-color: #B59D55;
+    color: #fff;
+    text-decoration: none;
+}

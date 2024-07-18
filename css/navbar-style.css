@@ -52,21 +52,6 @@
     color: #B59D55;
 }
 
-#navbarContact {
-    background-color: #F4F7FA;
-    padding: 10px;
-}
-
-.fab {
-    color: #1ECBC2;
-    transition: transform 0.3s ease; /* Agregamos una transición suave para el cambio de tamaño */
-}
-
-.fab:hover {
-    transform: scale(1.8); /* Aumentamos el tamaño del icono al 120% cuando se pasa el cursor sobre él */
-    color: #E53B97;
-}
-
 /* Estilos para el texto con clase .text-light */
 .text-light {
     margin-top: 3px;

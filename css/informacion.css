@@ -8,7 +8,10 @@
     background-color: #f8f9fa;
     padding: 50px 0;
     text-align: center;
+    margin-left: 2em; /* Margen izquierdo */
+    margin-right: 2em; /* Margen derecho */
 }
+
 
 .section-full-width h2 {
     font-size: 2em;
@@ -59,4 +62,13 @@
 
 .section-full-width .imagen:hover {
     transform: scale(1.05);
+    
+}
+
+/* Aquí empiezan las consultas de medios */
+
+@media (max-width: 768px) {
+    .section-full-width .imagen {
+        margin-bottom: 20px; /* Margen inferior */
+    }
 }
