@@ -65,6 +65,11 @@
     
 }
 
+.logo2 {
+    max-width: 100%; /* La imagen ocupará el ancho máximo del contenedor */
+}
+
+
 /* Aquí empiezan las consultas de medios */
 
 @media (max-width: 768px) {

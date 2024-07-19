@@ -53,6 +53,7 @@
 .logo2 {
    
     max-width: 40%; /* La imagen ocupará el ancho máximo del navbar */
+    margin-left: 90px;
 }
 
 .btn:hover {
