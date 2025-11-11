@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
-      href="./bootstrap-5.3.0-alpha2-dist/css/bootstrap.css"
+      href="./bootstrap-5.3.8-dist/css/bootstrap.css"
     />
-    <link rel="stylesheet" type="text/css" href="./css/index-estilos.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -29,19 +29,272 @@
   </head>
   <body>
     <!-- Navbar -->
-    <div id="navbar-placeholder"></div>
+    <!-- NAVBAR TOP -->
+    <nav class="navbarTop navbar-expand-lg" id="navbarTop">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-center">
+                <h5>Agenda tu cita <button id="clickHere">Click Aquí!</button></h5>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+    <!--NVBAR MAIN-->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow" id="navbarMain">
+        <div class="container d-flex justify-content-between align-items-center">
+
+           <!-- Contenido del navbar -->
+    <div class="collapse navbar-collapse" id="templatemo_main_nav">
+        <ul class="navbar-nav">
+            <li class="nav-itemt">
+                <a class="nav-link nav-container" href="#servicios-placeholder" id='nuestros-servicios'>
+                    <i class="fas fa-cogs"></i> Nuestros Servicios
+                </a>
+            </li>
+            <li class="nav-itemt">
+                <a class="nav-link nav-container" href="#testimonios-placeholder" id='clientes'>
+                    <i class="fas fa-users"></i> Nuestros Clientes
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-brand text-success logo h1 align-self-center" href="">
+                    <img class="logo" src="./assets/fotos/logos/logo1.png" alt="Logo de tu empresa">
+                </a>
+            </li>
+            <li class="nav-itemt">
+                <a class="nav-link nav-container" href="#informacion-placeholder" id='valoraciones-medicass'>
+                    <i class="fas fa-home"></i> Propiedades
+                </a>
+            </li>
+            <li class="nav-itemt">
+                <a class="nav-link nav-container" href="#ubicacion-placeholder" id='nostross'>
+                    <i class="fas fa-map-marker-alt"></i> Ubicación
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    </nav>
     <!-- MainImage -->
-    <div id="mainImage-placeholder"></div>
+    <!-- Carrusel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/fotos/carrusel/Banner01.webp" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/fotos/carrusel/Banner02.webp" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/fotos/carrusel/Banner03.webp" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <!-- infoferia -->
     <div id="infoferia-placeholder"></div>
     <!-- servicios -->
-    <div id="servicios-placeholder"></div>
+    <section class="nuestros-servicioss">
+        <div class="lineas-verdes-deco">
+            <div class="linea-verde-encima1"></div>
+            <div class="linea-verde-encima2"></div>
+        </div>
+
+        <div class="container text-center">
+            <h2 class="titulo-servicios">Por qué invertir con nosotros</h2>
+            <div class="linea-subrayada"></div> <!-- Línea de subrayado -->
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4">
+                    <div class="card card-background1">
+                        <img src="./assets/fotos/ACASIA.webp" alt="Acasia" style="width:100%; height:auto;">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="card-title">Más de 40 años de experiencia</h3>
+                            </div>
+                            <div class="card-body">
+                                <br>
+                                <p>Somos un grupo turístico español fundado en 1977 con residenciales en México y República Dominicana.</p>
+
+                                <div class="text-center mt-auto">
+                                    <br><br>
+                                    <a href="https://playanuevaromana.com/es/nuestros-servicios" target="_blank"  class="btn btn-primary btn-rounded" style="background-color: #DCB86C;">Más información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-4">
+                    <div class="card card-background2">
+                        <img src="./assets/fotos/sotavento.webp" alt="Sotavento" style="width:100%; height:auto;">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="card-title">Seguridad de financiamiento propio.</h3>
+                            </div>
+                            <div class="card-body">
+                                <br>
+                                <p>Con Grupo Piñero tendrá la ventaja de un interés fijo y muy competitivo en el mercado. En 48h y sin comisión de apertura.</p>
+                                <div class="text-center mt-auto">
+                                    <br><br>
+                                    <a href="https://playanuevaromana.com/es/nuestros-servicios" target="_blank"  class="btn btn-primary btn-rounded" style="background-color: #DCB86C;">Más información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-4">
+                    <div class="card card-background3">
+                        <img src="./assets/fotos/villaBali.webp" alt="Villa Bali" style="width:100%; height:auto;">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="card-title">Servicios y entorno excelentes.</h3>
+                            </div>
+                            <div class="card-body">
+                                <br>
+                                <p>Emplazamiento natural inimaginable con una completa gama de servicios al propietario y seguridad 24/7.</p>
+                                <div class="text-center mt-auto">
+                                    <br><br>
+                                    <a href="https://playanuevaromana.com/es/nuestros-servicios" target="_blank"  class="btn btn-primary btn-rounded" style="background-color: #DCB86C;">Más información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <!-- testimonios -->
-    <div id="testimonios-placeholder"></div>
+    <div class="testimonios-container">
+        <h2>Clientes Satisfechos</h2>
+        <div class="pyramid"></div>
+        <div class="video-grid">
+            <div class="video">
+                <div style="padding:56.25% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/988069448?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&color=ffffff&dnt=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="vpr1"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+            <div class="video">
+                <div style="padding:56.25% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/988069428?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&color=ffffff&dnt=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="prv2"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+            <div class="video">
+                <div style="padding:56.21% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/988069416?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&color=ffffff&dnt=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="prv1"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+        </div>
+    </div>
     <!-- informacion -->
-    <div id="informacion-placeholder"></div>
+    <!-- Sección de Testimonios -->
+    <div class="informacion-section">
+        <div class="testimonios-container">
+            <h2>Nuestras Propiedades</h2>
+        </div>
+    </div>
+
+    <!-- Primera sección -->
+    <section class="section-full-width">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Columna izquierda: imagen -->
+                <img src="./assets/fotos/villaBali.webp" class="img-fluid imagen" alt="Imagen">
+            </div>
+            <div class="col-md-6 text-left">
+                <!-- Columna derecha: texto informativo -->
+                <h2 class="text-right">Villa Bali</h2>
+                <p>
+                    Estas confortables villas están ubicadas en el enclave perfecto para una vida de comodidad y belleza dentro de Playa Nueva Romana disfrutando el clima caribeño y el extraordinario entorno que muestra los amaneceres más idílicos.
+                    Los espacios amplios de estas residencias inspiran diversas áreas para la socialización, permitiéndote apreciar, desde la comodidad de tu hogar, las sofisticadas terminaciones, la piscina y el diseño que realzan su belleza natural. Su acogedora terraza ofrece vistas fascinantes para crear una experiencia plena y única.
+                </p>
+                <!-- Botón -->
+                <a href="https://playanuevaromana.com/es/propiedades/villa-bali" target="_blank"  class="btn btn-rounded">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Segunda sección -->
+    <section class="section-full-width">
+        <div class="row">
+            <div class="col-md-6 order-md-2">
+                <!-- Columna izquierda: imagen -->
+                <img src="./assets/fotos/sotavento.webp" class="img-fluid imagen" alt="Imagen">
+            </div>
+            <div class="col-md-6 order-md-1 text-right">
+                <!-- Columna derecha: texto informativo -->
+                <h2 class="text-left">Residencial Sotavento Beach Townhouses</h2>
+                <p>
+                    Modernidad rodeada de belleza y lujo. <br>
+
+Sotavento Beach Townhouses es la nueva joya de Playa Nueva Romana. Un espacio integral próximo a la playa que conjuga bienestar en un entorno rodeado de lujo y seguridad y confort.
+
+Atractivos diseños, entorno único y ecológico que hace armonía con la naturaleza que disfrutas en cada espacio conjugado con servicios y amenidades exclusivas para sus residentes.
+                </p>
+                <!-- Botón -->
+                <a href="https://playanuevaromana.com/es/propiedades/sotavento-beach-townhouses" target="_blank"  class="btn btn-rounded">Leer más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tercera sección -->
+    <section class="section-full-width">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Columna izquierda: imagen -->
+                <img src="./assets/fotos/ACASIA.webp" class="img-fluid imagen" alt="Imagen">
+            </div>
+            <div class="col-md-6 text-left">
+                <!-- Columna derecha: texto informativo -->
+                <h2 class="text-right">Villa Acacia</h2>
+                <p>
+                    Naturaleza y belleza <br    >
+
+                    Las distintas zonas de esta impresionante villa destacan por su asombrosa manifestación de armonía y elegancia, inmersas en el entorno natural de Playa Nueva Romana.
+
+                   Con un diseño contemporáneo, sus espacios abiertos ofrecen una sensación acogedora y funcional, cuidadosamente concebidos para brindar un descanso incomparable y permitir el disfrute de un ambiente natural.                </p>
+                <!-- Botón -->
+                <a href="https://playanuevaromana.com/es/" target="_blank"  class="btn btn-rounded">Descubrir más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón al final de todas las secciones -->
+    <div class="row">
+        <div class="col-12 text-center">
+            <a href="https://playanuevaromana.com/es/propiedades" target="_blank"  class="btn btn-rounded" style="padding: 15px 30px; font-size: 1.5em; background-color: #DCB76C; color: #fff; btn:hover {
+                background-color: #B59D55;
+                color: #fff;
+                text-decoration: none;
+            }">Explorar más propiedades</a>
+        </div>
+    </div>
+
+    <br><br>
     <!-- ubicacion -->
-    <div id="ubicacion-placeholder"></div>
+    <section class="info-mapa row justify-content-between w-100">
+        <h1 class="titulo">Ven y visítanos en la feria del hogar en Corferias</h1>
+        <div class="maps col-md-5" style="margin-left: 3em; margin-right: 0;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8031218942892!2d-74.0925324241867!3d4.6291856422716595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bd9b9e73d65%3A0x3f449bb47da9bef3!2sCorferias!5e0!3m2!1ses-419!2sco!4v1721278643132!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="texto text col-md-5" style="margin-right: 3em; margin-left: 0;">
+            <div style="position:relative;padding-bottom:56.25%;"><iframe src="https://player.vimeo.com/video/988069400?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="comercialferia"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+    </section>
 
     <!-- WhatsApp Button -->
     <div id="whatsapp-button">
@@ -51,7 +304,89 @@
     </div>
 
     <!-- footer -->
-    <div id="footer-placeholder"></div>
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo"><img class="logo2" src="./assets/fotos/logos/logo1.png" alt="Logo de tu empresa"></h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw" style="color: #DCB86C;"></i>
+                            <a class="text-decoration-none">Bahia Principe Residences
+                                Autovía del Este, carretera San Pedro – La Romana</a>
+                        </li>
+
+                        <br>
+
+                        <li>
+                            <i class="fa fa-phone fa-fw" style="color: #DCB86C;"></i>
+                            <a class="text-decoration-none" href="tel:+573052589402">(305)2589402</a>
+                        </li>
+
+                        <br>
+
+                        <button style="background-color: #DCB86C; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;">
+                            <a href="mailto:lauramontanez@alcalacomunicaciones.com" style="color: white; text-decoration: none;">Enviar correo</a>
+                        </button>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light" style="font-weight: bolder;">¿Por qué invertir con nosotros?</h2>
+                    <p>Somos uno de los residenciales inmobiliario de mayor crecimiento y plusvalía para invertir en República Dominicana gracias a nuestro desarrollo planificado, solidez financiera y crecimiento sostenible.</p>
+                    <ul class="list-unstyled text-light footer-link-list" >
+                        <li style="color: black;"><strong>01</strong> Sin comisión por apertura</li>
+                        <li style="color: black;"><strong>02</strong> Autorización de crédito en menos de 48 horas</li>
+                        <li style="color: black;"><strong>03</strong> Tasa de interés fija del 7%</li>
+                        <li style="color: black;">Firmando un contrato</li>
+                        <li style="color: black;">Tarjeta de crédito</li>
+                        <li style="color: black;">Pregunte a su asesor inmobiliario por nuestros planes de financiamiento y comience a vivir su sueño.</li>
+                    </ul>
+                    <br><br>
+                    <!-- Botón -->
+                    <a href="https://playanuevaromana.com/es/financiamiento" target="_blank"  class="btn btn-rounded" style="padding: 15px 30px; font-size: 1.5em; background-color: #DCB76C; color: #fff;">Opciones de Financiamiento</a>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light" style="font-weight: bolder;">Ventajas de financiamiento</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li style="color: black;">Financiamiento propio con una atractiva tasa de interés</li>
+                        <li style="color: black;">Atractivos planes de financiamiento directo.</li>
+                        <li style="color: black;">Facilidad de pago del 10% de inicial.</li>
+                        <li style="color: black;">Tasa de interés fija del 7%. La más competitiva del mercado.</li>
+                        <li style="color: black;">Autorización del crédito en menos de 48 horas.</li>
+                        <li style="color: black;">Sin comisión por apertura.</li>
+                        <li style="color: black;">Certeza jurídica.</li>
+                        <li style="color: black;">Seguridad en la compra.</li>
+                        <li style="color: black;">Garantía del Grupo Piñero y Bahia Principe.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.facebook.com/PlayaNuevaRomana/"><i class="fab fa-facebook-f fa-lg fa-fw" style="color: #DCB86C;"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/playanuevaromana/"><i class="fab fa-instagram fa-lg fa-fw" style="color: #DCB86C;"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.youtube.com/c/BahiaPrincipeResidencesPlayaNuevaRomana"><i class="fab fa-youtube fa-lg fa-fw" style="color: #DCB86C;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+
+
+    </footer>
 
     <!-- Modal -->
     <div
@@ -165,91 +500,9 @@
       </div>
     </div>
 
-    <script>
-      $(document).ready(function () {
-        // Cargar navbar y otras secciones
-        $("#navbar-placeholder").load("./html/navbar.html");
-        $("#mainImage-placeholder").load("./html/mainImage.html");
-        $("#informacion-placeholder").load("./html/informacion.html");
-        $("#servicios-placeholder").load("./html/servicios.html");
-        $("#testimonios-placeholder").load("./html/testimonio.html");
-        $("#horarios-placeholder").load("./html/horarios.html");
-        $("#ubicacion-placeholder").load("./html/ubicacion.html");
-        $("#contactanos-placeholder").load("./html/contactanos.html");
-        $("#acreditacion-placeholder").load("./html/acreditacion.html");
-        $("#footer-placeholder").load("./html/footer.html");
-
-        // Función para animar el botón de WhatsApp
-        function animateButton() {
-          $("#whatsapp-button").animate({ right: "30px" }, 500, function () {
-            $("#whatsapp-button").animate({ right: "20px" }, 500);
-          });
-        }
-
-        // Animar el botón de WhatsApp cada 5 segundos
-        setInterval(animateButton, 5000);
-
-        // Mostrar el modal después de 45 segundos
-        setTimeout(function () {
-          $("#contactModal").modal("show");
-        }, 45000); // 45000 ms = 45 segundos
-
-        // Añadir evento de clic al botón en la navbar
-        $("#navbar-placeholder").on("click", "#clickHere", function () {
-          $("#contactModal").modal("show");
-        });
-
-        // Desplazamiento suave al hacer clic en un enlace del navbar
-        $("#navbar-placeholder").on("click", "a.nav-link", function (event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            const hash = this.hash;
-            $("html, body").animate(
-              {
-                scrollTop: $(hash).offset().top,
-              },
-              800,
-              function () {
-                window.location.hash = hash;
-              }
-            );
-          }
-        });
-
-        // Detectar clic en el botón externo y abrir el modal
-        $(document).on("click", "#agendaCitaBtn", function (event) {
-          event.preventDefault();
-          $("#contactModal").modal("show");
-        });
-      });
-
-      // Manejar el envío del formulario
-      function handleSubmit(event) {
-        event.preventDefault();
-        const form = document.getElementById("contact-form");
-        const data = new FormData(form);
-
-        fetch(form.action, {
-          method: "POST",
-          body: data,
-          mode: "no-cors",
-        })
-          .then(() => {
-            $("#contactModal").modal("hide");
-            $("#successModal").modal("show");
-            setTimeout(() => {
-              $("#successModal").modal("hide");
-              window.location.href = "/";
-            }, 5000); // 5000 ms = 5 segundos
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-          });
-      }
-    </script>
-
+    <script src="./js/app.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.js"></script>
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
