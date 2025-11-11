@@ -1,0 +1,881 @@
+/* Estilo para los enlaces en el footer */
+#tempaltemo_footer a {
+    color: #410B4F;
+    font-size: 0.9em!important;
+}
+#tempaltemo_footer a:hover {
+    color: #B59D54;
+}
+
+#tempaltemo_footer h2{
+    color: #DCB86C !important;
+}
+
+/* Espaciado para los elementos de lista en el footer */
+#tempaltemo_footer ul.footer-link-list li {
+    padding-top: 10px;
+}
+
+/* Estilo para los íconos de redes sociales en el footer */
+#tempaltemo_footer ul.footer-icons li {
+    width: 2.6em;
+    height: 2.6em;
+    line-height: 2.6em;
+}
+#tempaltemo_footer ul.footer-icons li:hover {
+    background-color: #cfd6e1;
+    transition: .5s;
+}
+#tempaltemo_footer ul.footer-icons li:hover i {
+    color: #212934;
+    transition: .5s;
+}
+
+/* Estilo para los elementos con clase .border-light */
+#tempaltemo_footer .border-light {
+    border-color: #B59D54 !important;
+}
+
+/* Estilo para los elementos dentro de un contenedor con clase .product-wap */
+.product-wap .h3,
+.product-wap li,
+.product-wap i,
+.product-wap p {
+    font-size: 12px !important;
+}
+.product-wap .product-color-dot {
+    width: 6px;
+    height: 6px;
+}
+
+.bg-dark { background-color: #F1F0EA !important;}
+
+.logo2 {
+
+    max-width: 40%; /* La imagen ocupará el ancho máximo del navbar */
+    margin-left: 90px;
+}
+
+.btn:hover {
+    background-color: #B59D55;
+    color: #fff;
+    text-decoration: none;
+}
+@font-face {
+    font-family: "Caveat-Bold";
+    src: url(../assets/fonts/Caveat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Medium";
+    src: url(../assets/fonts/Caveat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Regular";
+    src: url(../assets/fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-SemiBold";
+    src: url(../assets/fonts/Caveat-SemiBold.ttf);
+}
+
+body {
+
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.custom-navbar {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo translúcido */
+    transition: background-color 0.3s ease; /* Añades la transición al navbar personalizado */
+}
+
+
+.custom-navbar.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5); /* Color translúcido de los enlaces */
+}
+
+
+  /* Add this to your stylesheet */
+  body.scrolled .navbar.bg-faded {
+    background-color: rgba(250, 250, 250, 0); /* Transparent background on scroll */
+  }
+
+
+.col-md-3{
+    position: relative;
+    margin-top: 2.7vw;
+    margin-bottom: 15vw;
+}
+
+.listaMain {
+    list-style: none;
+    font-family: Caveat-Semibold;
+    font-size: 27px;
+    background-color: rgba(167, 83, 0, 0.5);
+    border-radius: 7px;
+    color: black;
+    padding: 9px;
+    transition: background-color 0.3s; /* Agregamos una transición suave para el fondo */
+}
+
+.listaMain:hover {
+    background-color: rgba(167, 83, 0, 0.7); /* Cambiamos el fondo al hacer hover para que se oscurezca */
+}
+
+.listaMain a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.listaMain img{
+    width: 70px;
+    margin-right: 10px;
+}
+
+#whatsapp-button {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    z-index: 1000;
+    transition: right 0.5s ease-in-out;
+    font-size: 50px;
+    color: #25D366;
+}
+
+#whatsapp-button i {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilo para el botón del formulario */
+.btn-primary {
+    background-color: #DCB76C;
+    border-color: #DCB76C; /* Puedes ajustar el borde si lo necesitas */
+}
+
+/* Cambio de color al hacer hover */
+.btn-primary:hover {
+    background-color: #C8A65F; /* Puedes ajustar el color al hacer hover */
+    border-color: #C8A65F;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(5px, 0); }
+    50% { transform: translate(0, 0); }
+    75% { transform: translate(-5px, 0); }
+    100% { transform: translate(0, 0); }
+}
+
+/* Estilos CSS personalizados */
+
+.informacion-section{
+    margin-bottom: -4em;
+}
+
+.section-full-width {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+    margin-left: 2em; /* Margen izquierdo */
+    margin-right: 2em; /* Margen derecho */
+}
+
+
+.section-full-width h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-full-width h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 5px;
+    background-color: #DCB76C;
+}
+
+.section-full-width p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.section-full-width .btn {
+    background-color: #DCB76C;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.section-full-width .btn:hover {
+    background-color: #B59D55;
+    color: #fff;
+    text-decoration: none;
+}
+
+.section-full-width .imagen {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.section-full-width .imagen:hover {
+    transform: scale(1.05);
+
+}
+
+.logo2 {
+    max-width: 100%; /* La imagen ocupará el ancho máximo del contenedor */
+}
+
+
+/* Aquí empiezan las consultas de medios */
+
+@media (max-width: 768px) {
+    .section-full-width .imagen {
+        margin-bottom: 20px; /* Margen inferior */
+    }
+}html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item img {
+    width: 20%; /* Ajusta el ancho al 75% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    object-fit: contain; /* Ajusta la imagen para caber dentro del contenedor sin distorsionarla */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del ícono de control */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: auto; /* Ancho automático */
+    background: none; /* Fondo transparente */
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo al pasar el mouse */
+}
+
+.carousel-indicators {
+    bottom: 10px; /* Posición de los indicadores */
+}
+
+.carousel-indicators button {
+    background-color: #fff; /* Color de fondo de los indicadores */
+    border: none; /* Sin borde */
+}
+
+.carousel-indicators button.active {
+    background-color: #1ECBC2; /* Color de fondo del indicador activo */
+}
+/* Estilos para el navbar top */
+.navbarTop {
+    background-color: #F1F0EB;
+    margin-top: -2.8px;
+    padding: 5px;
+    position: fixed; /* Hacer que la barra de navegación sea fija */
+    top: 0; /* Posicionar la barra de navegación en la parte superior */
+    width: 100%; /* Asegurar que la barra de navegación ocupe el ancho completo */
+    z-index: 1000; /* Asegurar que la barra de navegación esté por encima de otros elementos */
+}
+
+
+#navbarMain {
+    background-color: white;
+}
+
+#navbarMain a {
+    color: black;
+    font-size: 25px;
+    margin-top: 10px;
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+#navbarMain a:hover {
+    color: #B59D55; /* Cambia el color al pasar el mouse sobre el enlace */
+    text-decoration: underline;
+}
+
+.nav-itemt {
+    margin-top: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.nav-container {
+    color: #293A6B;
+    font-size: 25px;
+    margin-top: 10px;
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.nav-container:hover {
+    color: #1ECBC2; /* Cambia el color al pasar el mouse sobre el enlace */
+}
+
+.nav-container .fas {
+    color: #DCB76C;
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.nav-container:hover .fas {
+    color: #B59D55;
+}
+
+/* Estilos para el texto con clase .text-light */
+.text-light {
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+/* Estilos para el enlace del navbar */
+#navbarTop h5 {
+    color: #410A4F;
+    text-decoration: none;
+}
+
+/* Estilos para el botón del navbar */
+#clickHere {
+    background-color: #DCB76C; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    font-size: 25px;
+    margin-left: 2em; /* Espaciado a la izquierda del texto */
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    border: none; /* Quitar borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para cambios */
+}
+
+#clickHere:hover {
+    background-color: #B59D55; /* Cambiar color de fondo al pasar el mouse */
+    transform: scale(1.1); /* Aumentar tamaño al pasar el mouse */
+}
+
+/* Estilos al pasar el mouse sobre el enlace del navbar */
+#navbarTop h5 a:hover {
+    color: #E53B97;
+    text-decoration: underline;
+}
+
+/* Estilos para el navbar principal */
+.navbar {
+    padding: 10px; /* Ajusta el espaciado según tus preferencias */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido del navbar */
+}
+
+/* Estilos para el logo */
+.logo {
+    max-width: 78%; /* La imagen ocupará el ancho máximo del navbar */
+    display: block; /* Hacer que el logo ocupe todo el ancho disponible */
+    transition: transform 0.3s ease; /* Agregar transición suave al cambio de tamaño */
+    margin-bottom: 5px; /* Ajusta el margen inferior del logo */
+    margin-left: 12%;
+}
+
+/* Estilos para los íconos de Font Awesome */
+.fa {
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Estilos para los iconos específicos */
+.icon-envelope {
+    color: #1ECBC2; /* Color del ícono de correo */
+}
+.icon-phone {
+    color: #1ECBC2; /* Color del ícono de teléfono */
+}
+.icon-map-marker {
+    color: #1ECBC2; /* Color del ícono de dirección */
+}
+
+/* Cambiar color al pasar el cursor sobre los íconos */
+.contact-info:hover .fa {
+    color: #A02AA2; /* Color rosado al pasar el cursor sobre los íconos */
+}
+
+/* Estilos para los textos */
+.text-light0 {
+    color: #405da0; /* Color por defecto */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Cambiar color al pasar el cursor sobre los textos */
+.contact-info:hover .text-light0 {
+    color: #410A4F; /* Cambiar a tu color deseado */
+}
+
+/* Estilos generales para la navbar */
+.navbar {
+    background-color: white; /* Cambia el color de fondo según tus preferencias */
+    padding: 10px; /* Ajusta el espaciado según tus preferencias */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido del navbar */
+}
+
+/* Estilos para aumentar el tamaño del logo al pasar el cursor por encima */
+.logo:hover {
+    transform: scale(1.1); /* Aumentar el tamaño del logo al 110% */
+}
+
+/* Estilos generales */
+.nuestros-servicioss {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.lineas-verdes-deco {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.linea-verde-encima1, .linea-verde-encima2 {
+    height: 0.8em;
+    background: #DCB86C;
+}
+
+.linea-verde-encima1 {
+    width: 30em;
+}
+
+.linea-verde-encima2 {
+    width: 10em;
+}
+
+.card {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(243, 196, 5, 0.614);
+    margin: 50px 10px;
+    padding: 10px;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-header {
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.card-body {
+    padding: 10px 0;
+    line-height: 1.6;
+    color: #fff;
+    flex-grow: 1;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 767px) {
+    .row > .col-12 {
+        margin-bottom: 30px;
+    }
+    .row > .col-12:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(110, 81, 6, 0.7);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+    opacity: 0.5;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    z-index: 0;
+    pointer-events: none;
+}
+
+.titulo-servicios {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.linea-subrayada {
+    width: 100px;
+    height: 2px;
+    background-color: #DCB86C;
+    margin: 0 auto 20px;
+}
+
+.btn-rounded {
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-rounded:hover {
+    background-color: #DCB86C;
+    color: #fff;
+}
+/* Basic styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.testimonios-container {
+    position: relative;
+    width: 100%; /* Ocupar todo el ancho de la página */
+    padding: 50px 0;
+    overflow: hidden; /* Para ocultar los rectángulos que se salen del contenedor */
+    text-align: center; /* Centrar el contenido */
+    margin-top: 10%;
+
+}
+
+.testimonios-container h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    margin-bottom: 80px;
+}
+
+.testimonios-container h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Ajustar la posición de la línea */
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #DAD3CD;
+}
+
+/* Línea en la parte superior */
+.testimonios-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 15px;
+    background-color: #DAD3CD;
+}
+
+/* Línea adicional en el lado izquierdo */
+.testimonios-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+    background-color: #DCB76C ;
+}
+
+/* Pseudoelemento ::before para el rectángulo izquierdo */
+.testimonios-container::before {
+    left: 0;
+    z-index: -1; /* Para que quede detrás del contenido */
+    transform: skewX(45deg); /* Inclina el rectángulo */
+}
+
+/* Posicionamiento del rectángulo derecho */
+.testimonios-container::after {
+    right: 0;
+    z-index: -1; /* Para que quede detrás del contenido */
+    transform: skewX(-45deg); /* Inclina el rectángulo */
+}
+
+/* Video grid styles */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7%; /* Aumentamos el espacio entre los videos a 7% */
+}
+
+.video {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    height: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    width: 100%;
+}
+
+/* Ajustes para los videos */
+.video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video .video-preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.video .video-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video .video-preview .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    background: url('./assets/play-button.png') no-repeat center center;
+    background-size: contain;
+}
+
+/* Añadir margen derecho a todos los elementos excepto los de la última columna */
+.video:not(:nth-child(3n)) {
+    margin-right: 1%; /* Ajustamos el margen derecho */
+}
+
+.video:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Añade una consulta de medios para manejar la visualización en pantallas más pequeñas */
+@media screen and (max-width: 720px) {
+    .video-grid {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        grid-gap: 20px; /* Aumenta el espacio entre los videos */
+    }
+}
+/* Estilos para el header */
+.encabezado {
+    background-color: rgba(167, 83, 0, 0.5) ; /* Color verde */
+    padding: 60px 0; /* Añade un espacio interno al encabezado */
+    text-align: center; /* Centra el texto horizontalmente */
+
+    /* Estilos para hacer el texto siempre centrado verticalmente */
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el texto del header */
+.titulo_principal {
+    text-decoration: none;
+    font-family: Caveat-Bold;
+    font-size: 100px;
+    color: black;
+    margin: 0; /* Elimina el margen predeterminado del h1 */
+}
+
+.titulo_secundario {
+    text-decoration: none;
+    font-family: Caveat-Bold;
+    font-size: 70px;
+    color: black;
+    margin: 0; /* Elimina el margen predeterminado del h1 */
+}
+
+/* Estilos para hacer el encabezado responsive */
+@media (max-width: 768px) {
+    .encabezado {
+        padding: 10px 0; /* Ajusta el espacio interno en dispositivos más pequeños */
+    }
+}
+
+/* Añade separación entre el encabezado y el contenido debajo */
+.container {
+    margin-top: 20px; /* Puedes ajustar la cantidad de separación según tus preferencias */
+}
+
+.content-container{
+    margin: 5vw;
+}
+
+.encabezado-container{
+    margin-bottom: 5vw;
+}.titulo {
+  text-align: center;
+  font-size: 30px; /* Ajusta este valor al tamaño de letra deseado */
+  color: #000;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.titulo::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  height: 4px;
+  width: 50%;
+  background-color: #DCB76C;
+}
+
+.info-mapa {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #ccc;
+  padding: 1rem;
+}
+
+.maps, .texto {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 600px; /* Ajusta este valor al tamaño máximo que desees */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  margin: auto;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Ajusta estos valores a la relación de aspecto deseada */
+}
+
+.texto{
+  padding-left: 00rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 600px; /* Ajusta este valor al tamaño máximo que desees */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  margin: auto;
+}
+
+.info__mapa-Titulo{
+  text-align: center;
+  margin-top: 0.5em;
+  font-family: pierSansLight;
+}
+
+.encontrar{
+  color: #DCB76C;
+}
+
+.info__mapa-Parrafo{
+  margin-top: 2em;
+  text-align: center;
+  font-family: pierSansLight;
+}
+
+.info_mapa_boton {
+  position: relative;
+  display: inline-block;
+  background-color: #DCB76C;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 35%;
+  margin-top: 40px;
+}
+
+.info_mapa_boton:hover{
+  background-color: #C8A65F;
+  border-color: #C8A65F;
+  text-decoration: none;
+  color: wheat;
+}
+
+/* Aquí empiezan las consultas de medios */
+
+@media (max-width: 768px) {
+  .info-mapa {
+    flex-direction: column;
+    align-items: center;
+    border: none; /* Elimina los bordes */
+    box-shadow: none; /* Elimina los efectos de sombra */
+  }
+
+  .maps, .texto {
+    width: 100%;
+    height: auto; /* Asegura que el video y el mapa tengan la misma altura */
+    margin-bottom: 5rem; /* Agrega un espacio entre el video y el mapa */
+  }
+
+  .texto {
+    padding-left: 4rem; /* Mueve el video un poco hacia la derecha */
+  }
+
+
+}
